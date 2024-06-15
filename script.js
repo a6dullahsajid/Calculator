@@ -69,6 +69,10 @@ document.addEventListener(
         result();
         disp();
         break;
+      case "Enter":
+        result();
+        disp();
+        break;
       case "Backspace":
         removelast();
         disp();
