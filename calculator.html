@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="calci.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="box">
+      <h1>Calculator</h1>
+      <div id="display">0</div>
+      <div class="num">
+        <button
+          onclick="calc='';disp();
+          "
+        >
+          <i
+            class="fa-solid fa-rotate-right"
+            style="color: rgb(180, 103, 251)"
+          ></i>
+        </button>
+        <button
+          onclick="removelast();disp();
+          "
+        >
+          <i
+            class="fa-solid fa-delete-left"
+            style="color: rgb(180, 103, 251)"
+          ></i>
+        </button>
+        <button
+          onclick="percent();disp();
+          "
+        >
+          %
+        </button>
+        <button
+          onclick="calc+='/';disp();
+            "
+        >
+          <i class="fa-solid fa-divide" style="color: rgb(180, 103, 251)"></i>
+        </button>
+        <button
+          onclick="calc+='1';disp();
+          "
+        >
+          1
+        </button>
+        <button
+          onclick="calc+='2';disp();
+            "
+        >
+          2
+        </button>
+        <button
+          onclick="calc+='3';disp();
+            "
+        >
+          3
+        </button>
+        <button
+          onclick="calc+='*';disp();
+            "
+        >
+          <i class="fa-solid fa-xmark" style="color: rgb(180, 103, 251)"></i>
+        </button>
+        <button
+          onclick="calc+='4';disp();
+            "
+        >
+          4
+        </button>
+        <button
+          onclick="calc+='5';disp();
+            "
+        >
+          5
+        </button>
+        <button
+          onclick="calc+='6';disp();
+        "
+        >
+          6
+        </button>
+        <button
+          onclick="calc+='-';disp();
+          "
+        >
+          <i class="fa-solid fa-minus" style="color: rgb(180, 103, 251)"></i>
+        </button>
+        <button
+          onclick="calc+='7';disp();
+        "
+        >
+          7
+        </button>
+        <button
+          onclick="calc+='8';disp();
+        "
+        >
+          8
+        </button>
+        <button
+          onclick="calc+='9';disp();
+        "
+        >
+          9
+        </button>
+        <button
+          onclick="calc+='+';disp();
+      "
+        >
+          <i class="fa-solid fa-plus" style="color: rgb(180, 103, 251)"></i>
+        </button>
+        <button
+          onclick="calc+='0';disp();
+      "
+        >
+          0
+        </button>
+        <button
+          onclick="calc+='.';disp();
+      "
+        >
+          .
+        </button>
+        <button
+          onclick="result();disp();
+            "
+        >
+          <i class="fa-solid fa-equals" style="color: rgb(180, 103, 251)"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
